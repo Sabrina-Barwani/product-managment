@@ -1,0 +1,118 @@
+*{
+    /* return everything to normal  */
+    margin: 0;
+    padding: 0;
+}
+
+/* body color black and text is white  */
+
+body{
+    background: rgb(57, 56, 56);
+    color: white;
+    /* set the font for all the text inside the body  */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.crud{
+    /* to make the all the containt inside the page in the cenetr and space  */
+    width: 80%;
+    margin: auto;
+
+}
+
+.head{
+
+    /* the head class text to center 
+    and make it all as upper case */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    /* space up  */
+ /* up , down and right , left  */
+    margin: 10px 0;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    /* remove otline and border   */
+    outline: none;
+    border: none;
+    background: rgb(53, 50, 50);
+    /* space between the inputs  */
+    margin: 4px 0;
+    border-radius: 4px;
+    /* padding inside the input  */
+    padding: 4px;
+    /* after doing the focus and the background will change to black 
+    if you wrote anything the text inside will not 
+    be visibale so we need to set the color  */
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+/* when focus on a input  */
+input:focus{
+background-color: black;
+/* نكبر  */
+transform: scale(1.1);
+}
+
+.price input{
+    width: 20%;
+}
+
+#total{
+    background: rgb(74, 21, 6);
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+
+#total::before{
+    content: 'Total : ';
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    /* when my mouse above the buttons it should change to hand "pointer" */
+    cursor: pointer;
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 20px;
+    /* to make sure the letter spacing takes 0.5 sec not faster mush (hover) */
+    transition: 0.5s;
+}
+
+button:hover{
+    /* when the mouse points in the buttons the button color changes and 
+    there will be space between the letters  */
+    background: violet;
+    letter-spacing: 2px;
+}
+
+.btnSearch{
+/* put the two button next to each other  and make space */
+display: flex;
+justify-content: space-between;
+}
+.btnSearch button{
+
+    /* setting the width of each button  */
+    width: 45%;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+th,td{
+    padding: 5px;
+}
